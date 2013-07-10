@@ -162,7 +162,7 @@ shopt -s histappend
 
 # Make prompt informative
 # See:  http://www.ukuug.org/events/linux2003/papers/bash_tips/
-PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\]"
+PS1="\[\033[0;34m\][\u@\h:\w]$\[\033[0m\] "
 
 ## -----------------------
 ## -- 2) Set up aliases --
@@ -187,6 +187,7 @@ alias md='mkdir'
 alias cl='clear'
 alias du='du -ch --max-depth=1'
 alias treeacl='tree -A -C -L 2'
+alias ls='ls --color=auto'
 
 # 2.3) Text and editor commands
 alias em='emacs -nw'     # No X11 windows
@@ -225,3 +226,6 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
